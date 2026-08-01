@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /deleteaccount
+Disallow: /api/
+Sitemap: https://www.marinebiodiversityconservation.com/sitemap.xml

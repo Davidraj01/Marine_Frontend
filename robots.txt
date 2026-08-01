@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /careers
+Disallow: /contact
+Disallow: /donate
+
+Sitemap: https://www.marinebiodiversityconservation.com/sitemap.xml
