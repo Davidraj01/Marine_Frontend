@@ -39,7 +39,7 @@ import viperfish from "../assets/ocean/viperfish.jfif";
 import anglerfish from "../assets/ocean/angelerfish.png";
 import gulper from "../assets/ocean/gulper.png";
 import fangtooth from "../assets/ocean/fangtooth.jpeg";
-import giantSquid from "../assets/ocean/giantSquid.png";
+import giantSquid from "../assets/ocean/giantsquid.png";
 const dragonfish = "../assets/ocean/dragonfish.png";
 const tripodFish = "../assets/ocean/tripodFish.png";
 const blackdevil = "../assets/ocean/blackdevil.png";
