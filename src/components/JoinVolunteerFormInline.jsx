@@ -11,7 +11,7 @@ import {
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { Player } from "@lottiefiles/react-lottie-player";
-import successAnim from "../animations/success.json";
+import successAnim from "../animations/Success.json";
 
 export default function JoinVolunteerFormInline({ onSubmit }) {
   // 1. STATE
