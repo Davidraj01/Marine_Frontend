@@ -37,8 +37,6 @@ const VolunteerList = lazy(() => import("./components/VolunteerList"));
 const GetInvolved = lazy(() => import("./pages/Blog"));
 const AccountDeletion = lazy(() => import("./pages/DeleteAccount"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage"));
-const BlogList = lazy(() => import("./pages/BlogList"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
 const AdminLogin = lazy(() => import("./pages/admin/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/admin/AdminDashboard"));
 
@@ -171,8 +169,6 @@ export default function App() {
               <Route path="/deleteaccount" element={<AccountDeletion />} />
               <Route path="/gallery/:albumId" element={<GalleryPage />} />
 
-              <Route path="/blog" element={<BlogList />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
 
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route

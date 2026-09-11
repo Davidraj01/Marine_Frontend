@@ -27,6 +27,10 @@ export default function Navbar({ visitorCount = 0 }) {
     // { to: "/careers", label: "Careers" },
     // { to: "/opine", label: "Opine" },
     { to: "/marine-life", label: "Marine Life" },
+    {
+      to: "https://blog.marinebiodiversityconservation.com/",
+      label: "Blog",
+    },
     { to: "/contact", label: "Contact" },
   ];
 
@@ -59,16 +63,29 @@ export default function Navbar({ visitorCount = 0 }) {
             {/* DESKTOP NAV */}
             <nav className="hidden md:flex items-center gap-6">
               <ul className="flex items-center gap-4">
-                {navLinks.map((l) => (
-                  <li key={l.to}>
-                    <Link
-                      to={l.to}
-                      className="text-sm px-2 py-1 rounded-md hover:text-white/95 hover:bg-white/5 transition"
-                    >
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
+                {navLinks.map((l) =>
+                  l.to.startsWith("http") ? (
+                    <li key={l.to}>
+                      <a
+                        href={l.to}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm px-2 py-1 rounded-md hover:text-white/95 hover:bg-white/5 transition"
+                      >
+                        {l.label}
+                      </a>
+                    </li>
+                  ) : (
+                    <li key={l.to}>
+                      <Link
+                        to={l.to}
+                        className="text-sm px-2 py-1 rounded-md hover:text-white/95 hover:bg-white/5 transition"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
 
               <div className="flex items-center gap-4 ml-4">
@@ -132,17 +149,31 @@ export default function Navbar({ visitorCount = 0 }) {
         >
           <div className="px-4 space-y-3">
             <ul className="flex flex-col gap-2">
-              {navLinks.map((l) => (
-                <li key={l.to}>
-                  <Link
-                    to={l.to}
-                    onClick={() => setOpen(false)}
-                    className="block px-3 py-2 rounded-md text-white/95 hover:bg-white/5 transition"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
+              {navLinks.map((l) =>
+                l.to.startsWith("http") ? (
+                  <li key={l.to}>
+                    <a
+                      href={l.to}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setOpen(false)}
+                      className="block px-3 py-2 rounded-md text-white/95 hover:bg-white/5 transition"
+                    >
+                      {l.label}
+                    </a>
+                  </li>
+                ) : (
+                  <li key={l.to}>
+                    <Link
+                      to={l.to}
+                      onClick={() => setOpen(false)}
+                      className="block px-3 py-2 rounded-md text-white/95 hover:bg-white/5 transition"
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
 
             <div className="flex items-center justify-between pt-2">

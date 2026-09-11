@@ -83,4 +83,3 @@ export const GALLERY_ALBUMS = [
     ],
   },
 ];
-console.log(GALLERY_ALBUMS);

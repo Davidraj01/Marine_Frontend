@@ -1,6 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import SPECIES_DB from '../src/data/speciesData.js';
+import oceanCountries from '../src/data/oceanCountries.js';
+import { GALLERY_ALBUMS } from '../src/data/galleryData.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -8,15 +11,15 @@ const __dirname = path.dirname(__filename);
 const BASE_URL = 'https://www.marinebiodiversityconservation.com';
 const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
-// Routes with priority levels
-const routes = [
+// Static routes, hand-tuned priority/changefreq per page type.
+const staticRoutes = [
   // High priority - main pages
   { path: '/', priority: '1.0', changefreq: 'weekly' },
   { path: '/about', priority: '0.9', changefreq: 'weekly' },
   { path: '/projects', priority: '0.9', changefreq: 'weekly' },
   { path: '/donate', priority: '0.9', changefreq: 'weekly' },
   { path: '/contact', priority: '0.9', changefreq: 'weekly' },
-  
+
   // Medium priority - content pages
   { path: '/getinvolved', priority: '0.8', changefreq: 'weekly' },
   { path: '/careers', priority: '0.8', changefreq: 'weekly' },
@@ -29,13 +32,58 @@ const routes = [
   { path: '/heros', priority: '0.7', changefreq: 'weekly' },
   { path: '/marine-quiz', priority: '0.7', changefreq: 'monthly' },
   { path: '/ocean-drive', priority: '0.7', changefreq: 'monthly' },
-  
+
   // Low priority - legal/policy pages
   { path: '/privacy-policy', priority: '0.4', changefreq: 'yearly' },
   { path: '/terms-and-conditions', priority: '0.4', changefreq: 'yearly' },
   { path: '/cancellation-refund-policy', priority: '0.4', changefreq: 'yearly' },
   { path: '/membership-agreement', priority: '0.4', changefreq: 'yearly' },
   { path: '/donation-policy', priority: '0.4', changefreq: 'yearly' },
+];
+
+// /marine-life/:group and /marine-life/:group/:speciesId — generated from the
+// same data the pages render, so the sitemap can't drift out of sync with it.
+function marineLifeRoutes() {
+  const routes = [];
+  for (const [groupKey, groupData] of Object.entries(SPECIES_DB)) {
+    routes.push({ path: `/marine-life/${groupKey}`, priority: '0.7', changefreq: 'monthly' });
+    for (const list of Object.values(groupData.groups || {})) {
+      for (const sp of list) {
+        routes.push({
+          path: `/marine-life/${groupKey}/${sp.id}`,
+          priority: '0.6',
+          changefreq: 'monthly',
+        });
+      }
+    }
+  }
+  return routes;
+}
+
+// /countries/:countryName — matches the encodeURIComponent(country.name) links
+// used on the Countries page.
+function countryRoutes() {
+  return oceanCountries.map((country) => ({
+    path: `/countries/${encodeURIComponent(country.name)}`,
+    priority: '0.6',
+    changefreq: 'monthly',
+  }));
+}
+
+// /gallery/:albumId
+function galleryRoutes() {
+  return GALLERY_ALBUMS.map((album) => ({
+    path: `/gallery/${album.id}`,
+    priority: '0.5',
+    changefreq: 'monthly',
+  }));
+}
+
+const routes = [
+  ...staticRoutes,
+  ...marineLifeRoutes(),
+  ...countryRoutes(),
+  ...galleryRoutes(),
 ];
 
 const generateSitemap = async () => {
@@ -57,9 +105,9 @@ ${routes
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir);
   }
-  
+
   fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap);
-  console.log('✅ sitemap.xml generated successfully!');
+  console.log(`✅ sitemap.xml generated with ${routes.length} URLs`);
 };
 
 generateSitemap();

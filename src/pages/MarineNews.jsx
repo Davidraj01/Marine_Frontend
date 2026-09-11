@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../utils/contants";
 
 export default function MarineNews() {
   const [news, setNews] = useState([]);
@@ -9,9 +10,7 @@ export default function MarineNews() {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const res = await axios.get(
-          "https://back.marinebiodiversityconservation.com/api/all-news",
-        );
+        const res = await axios.get(`${BASE_URL}/all-news`);
         setNews(res.data);
       } catch (err) {
         console.error(err);

@@ -595,7 +595,7 @@ export const SPECIES_DB = {
           id: "giant-clam-tridacna-gigas",
           name: "Giant Clam",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/7/7b/Tridacna_gigas_-_Michaelmas_Cay.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Giant_clam_(Tridacna_gigas)_Michaelmas_Cay.jpg",
           status: "Critically Endangered",
           about:
             "Largest living bivalve mollusk; populations declined heavily due to overharvesting and habitat loss.",
@@ -604,7 +604,7 @@ export const SPECIES_DB = {
           id: "noble-pen-shell",
           name: "Noble Pen Shell (Fan Mussel)",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/5/55/Pinna_nobilis.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Fan_mussel_(Pinna_nobilis).jpg",
           status: "Critically Endangered",
           about:
             "Mediterranean endemic bivalve devastated by disease outbreaks and mass mortality events.",
@@ -613,7 +613,7 @@ export const SPECIES_DB = {
           id: "white-abalone",
           name: "White Abalone",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/6/6e/White_abalone.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/White_abalone_Haliotis_sorenseni.jpg",
           status: "Critically Endangered",
           about:
             "Marine sea snail with extremely low remaining populations; threatened by historic overfishing and slow recovery.",
@@ -622,7 +622,7 @@ export const SPECIES_DB = {
           id: "smooth-giant-clam",
           name: "Smooth Giant Clam",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/1/14/Tridacna_derasa_-_Oceania.JPG",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Tridacna_derasa.001_-_Aquarium_Finisterrae.JPG",
           status: "Endangered",
           about:
             "Large reef clam threatened by exploitation and reef habitat degradation.",
@@ -638,7 +638,7 @@ export const SPECIES_DB = {
           id: "queen-conch",
           name: "Queen Conch",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/2/2c/Queen_conch_Strombus_gigas.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Strombus_gigas_(queen_conch)_3_(25058998465).jpg",
           status: "Threatened (ESA - 2024)",
           about:
             "Caribbean sea snail heavily exploited for meat and shell trade; listed as threatened under the U.S. Endangered Species Act in 2024.",
@@ -653,7 +653,7 @@ export const SPECIES_DB = {
           id: "common-octopus",
           name: "Common Octopus",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/9/9f/Octopus_vulgaris_2.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Common_octopus.jpg",
           status: "Least Concern",
           about:
             "Highly intelligent cephalopod found across temperate and tropical seas worldwide.",
@@ -662,7 +662,7 @@ export const SPECIES_DB = {
           id: "european-squid",
           name: "European Squid",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/9/9b/Loligo_vulgaris.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/European_Squid.jpg",
           status: "Data Deficient",
           about:
             "Common coastal squid in Europe; listed as Data Deficient due to limited global assessment certainty.",
@@ -686,7 +686,7 @@ export const SPECIES_DB = {
           id: "elkhorn-coral",
           name: "Elkhorn Coral",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/7/7f/Acropora_palmata.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Acropora_palmata_(Elkhorn_coral).jpg",
           status: "Critically Endangered",
           about:
             "Major reef-building coral in the Caribbean; severely declined from disease, warming, hurricanes and pollution.",
@@ -695,7 +695,7 @@ export const SPECIES_DB = {
           id: "staghorn-coral",
           name: "Staghorn Coral",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/0/0a/Acropora_cervicornis.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Acropora_cervicornis_(Staghorn_Coral_-_Haiti).jpg",
           status: "Critically Endangered",
           about:
             "Fast-growing branching coral; dramatic population collapse due to coral disease, warming and water pollution.",
@@ -704,7 +704,7 @@ export const SPECIES_DB = {
           id: "pillar-coral",
           name: "Pillar Coral",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/0/00/Dendrogyra_cylindrus.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Dendrogyra_cylindrus_(pillar_coral)_(San_Salvador_Island,_Bahamas)_1_(15513345363).jpg",
           status: "Critically Endangered",
           about:
             "Caribbean coral suffering rapid losses, especially due to stony coral tissue loss disease (SCTLD).",
@@ -720,7 +720,7 @@ export const SPECIES_DB = {
           id: "reef-building-corals",
           name: "Many Reef-Building Corals",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/6/6c/Coral_Reef_Fish.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Reef_building_corals.jpg",
           status: "Threatened (varies by species)",
           about:
             "Over 40% of reef-building coral species are threatened with extinction due to warming seas and human impacts.",
@@ -737,7 +737,7 @@ export const SPECIES_DB = {
           id: "beadlet-anemone",
           name: "Beadlet Anemone",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/1/1b/Actinia_equina.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Actinia_equina2.JPG",
           status: "Least Concern (regional assessments exist)",
           about:
             "Common intertidal sea anemone found on rocky coasts; generally not considered threatened.",
@@ -746,7 +746,7 @@ export const SPECIES_DB = {
           id: "moon-jelly",
           name: "Moon Jelly",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_%28Moon_jelly%29.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Moon_Jellies_(Aurelia_aurita)_(7153399193).jpg",
           status: "Not Evaluated",
           about:
             "Very common jellyfish in many oceans; not globally evaluated by the IUCN Red List.",
@@ -755,7 +755,7 @@ export const SPECIES_DB = {
           id: "mauve-stinger",
           name: "Mauve Stinger (Purple-striped Jellyfish)",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/1/17/Pelagia_noctiluca.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Pelagia_noctiluca.jpg",
           status: "Not Evaluated",
           about:
             "Open-ocean jellyfish known for painful stings; IUCN status commonly recorded as Not Evaluated.",
@@ -808,7 +808,7 @@ export const SPECIES_DB = {
           id: "crown-of-thorns-starfish",
           name: "Crown-of-thorns Starfish",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/7/78/Acanthaster_planci_2019.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Crown_of_Thorns_Starfish_(5457578925).jpg",
           status: "Not Evaluated",
           about:
             "Coral-eating starfish known for destructive outbreaks on reefs; IUCN global conservation status is not evaluated.",
@@ -823,7 +823,7 @@ export const SPECIES_DB = {
           id: "stony-sea-urchin",
           name: "Stony Sea Urchin",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/3/3a/Paracentrotus_lividus.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Paracentrotus_lividus_profil.JPG",
           status: "Not Evaluated",
           about:
             "Common Mediterranean/Atlantic sea urchin; widely present but not yet assessed globally by IUCN.",
@@ -832,7 +832,7 @@ export const SPECIES_DB = {
           id: "long-spined-sea-urchin",
           name: "Long-spined Sea Urchin",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diadema_antillarum.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Diadema_antillarum_Flower_Garden_Banks.jpg",
           status: "Not Evaluated",
           about:
             "Important Caribbean reef grazer; suffered major die-offs but global IUCN status is not evaluated.",
@@ -865,7 +865,7 @@ export const SPECIES_DB = {
           id: "antarctic-krill",
           name: "Antarctic Krill",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/7/77/Euphausia_superba2.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Antarctic_krill_(Euphausia_superba).jpg",
           status: "Least Concern",
           about:
             "Foundation species of the Southern Ocean food web; IUCN assessed as Least Concern.",
@@ -874,7 +874,7 @@ export const SPECIES_DB = {
           id: "calanus-finmarchicus",
           name: "Calanus finmarchicus (Copepod)",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/0/02/Copepod.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Cop%C3%A9podo.jpg",
           status: "Not Evaluated",
           about:
             "Key North Atlantic zooplankton species; not evaluated on the IUCN Red List.",
@@ -907,7 +907,7 @@ export const SPECIES_DB = {
           id: "giant-kelp",
           name: "Giant Kelp",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/6/63/Macrocystis_pyrifera_2.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Giant_Kelp_-_Macrocystis_pyrifera_(29296895168).jpg",
           status: "Not Evaluated",
           about:
             "One of the world’s largest seaweeds; forms kelp forests that support rich marine biodiversity.",
@@ -916,7 +916,7 @@ export const SPECIES_DB = {
           id: "bull-kelp",
           name: "Bull Kelp",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/b/b4/Nereocystis_luetkeana.jpg",
+            "https://en.wikipedia.org/wiki/Special:FilePath/Bull_kelp._Cambria_CA.jpg",
           status: "Not Evaluated",
           about:
             "Large brown algae forming underwater forests along the Pacific coast; important habitat species.",
@@ -925,7 +925,7 @@ export const SPECIES_DB = {
           id: "gelidium-corneum",
           name: "Gelidium corneum",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/9/97/Gelidium_corneum.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Gelidium_corneum_var._luxurians_Crouan.jpg",
           status: "Not Evaluated",
           about:
             "Red algae harvested in some regions for agar production; IUCN status recorded as Not Evaluated.",
@@ -953,7 +953,7 @@ export const SPECIES_DB = {
           id: "zostera-capensis",
           name: "Southern African Eelgrass",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/a/a2/Zostera_capensis.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Zostera_(cropped).jpg",
           status: "Vulnerable",
           about:
             "Highly fragmented coastal seagrass along African shores; impacted by coastal development, pollution, sedimentation and habitat loss.",
@@ -962,7 +962,7 @@ export const SPECIES_DB = {
           id: "halophila-hawaiiana",
           name: "Halophila hawaiiana",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/1/14/Halophila.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Halophila_ovalis.jpg",
           status: "Vulnerable",
           about:
             "Rare seagrass endemic to Hawai‘i with restricted distribution; sensitive to disturbance and habitat degradation.",
@@ -977,7 +977,7 @@ export const SPECIES_DB = {
           id: "posidonia-oceanica",
           name: "Posidonia oceanica (Neptune Grass)",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/3/35/Posidonia_oceanica.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Posidonia_oceanica.jpg",
           status: "Least Concern",
           about:
             "Mediterranean endemic seagrass forming major carbon-rich meadows; declining locally due to anchors, pollution and warming seas.",
@@ -986,7 +986,7 @@ export const SPECIES_DB = {
           id: "thalassia-testudinum",
           name: "Turtle Grass",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/c/c2/Thalassia_testudinum.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Thalassia_testudinum_(turtle_grass)_(South_Pigeon_Creek_estuary,_San_Salvador_Island,_Bahamas)_7_(15859722009).jpg",
           status: "Least Concern",
           about:
             "Dominant Caribbean seagrass; forms extensive meadows that support fish nurseries and turtle feeding grounds.",
@@ -995,7 +995,7 @@ export const SPECIES_DB = {
           id: "zostera-marina",
           name: "Eelgrass",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/f/f0/Zostera_marina.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Zostera_marina.jpeg",
           status: "Least Concern",
           about:
             "Foundation seagrass in temperate coastal ecosystems; important habitat but threatened regionally by eutrophication and coastal stress.",
@@ -1070,7 +1070,7 @@ export const SPECIES_DB = {
           id: "bugula-neritina",
           name: "Bugula neritina (Branching Moss Animal)",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/1/18/Bugula_neritina_01.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Bugula_neritina.jpg",
           status: "Not Evaluated",
           about:
             "Common fouling bryozoan forming branching colonies on hard surfaces; widely distributed but not evaluated by IUCN.",
@@ -1079,7 +1079,7 @@ export const SPECIES_DB = {
           id: "celleporella-hyalina",
           name: "Celleporella hyalina",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bryozoa_microscopic_colony.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Bryozoan_colonies_(10.3897-zookeys.812.26964)_Figure_7.jpg",
           status: "Not Evaluated",
           about:
             "Encrusting bryozoan found in cold/temperate coastal waters; IUCN status recorded as Not Evaluated.",
