@@ -5,6 +5,7 @@ const ObjectivesZigzag = lazy(() => import("../components/ObjectivesZigzag"));
 const Threats = lazy(() => import("../components/Threats"));
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
+import { BLOG_SCHEMA } from "../data/blogPosts";
 
 // import CTA from '../components/CTA';
 
@@ -22,6 +23,7 @@ export default function Home() {
         description="Learn about marine biodiversity, ocean conservation methods, and how to protect aquatic life for a sustainable future."
         canonical="https://www.marinebiodiversityconservation.com/"
         image="/img-1.webp"
+        schema={BLOG_SCHEMA}
       />
       <main className="relative z-10 text-white">
         {/* Hero Section */}

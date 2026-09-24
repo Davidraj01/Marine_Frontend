@@ -3,3 +3,4 @@ Allow: /
 Disallow: /deleteaccount
 Disallow: /api/
 Sitemap: https://www.marinebiodiversityconservation.com/sitemap.xml
+Sitemap: https://blog.marinebiodiversityconservation.com/sitemap_index.xml

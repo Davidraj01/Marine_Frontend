@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import SPECIES_DB from '../src/data/speciesData.js';
 import oceanCountries from '../src/data/oceanCountries.js';
 import { GALLERY_ALBUMS } from '../src/data/galleryData.js';
+import { BLOG_POSTS } from '../src/data/blogPosts.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -79,11 +80,23 @@ function galleryRoutes() {
   }));
 }
 
+// WordPress blog posts live on blog.<domain>, so these carry absolute URLs and
+// their real last-modified date instead of the build date.
+function blogRoutes() {
+  return BLOG_POSTS.map((post) => ({
+    url: post.url,
+    lastmod: post.dateModified.slice(0, 10),
+    priority: '0.6',
+    changefreq: 'monthly',
+  }));
+}
+
 const routes = [
   ...staticRoutes,
   ...marineLifeRoutes(),
   ...countryRoutes(),
   ...galleryRoutes(),
+  ...blogRoutes(),
 ];
 
 const generateSitemap = async () => {
@@ -92,8 +105,8 @@ const generateSitemap = async () => {
 ${routes
   .map((route) => {
     return `  <url>
-    <loc>${BASE_URL}${route.path}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${route.url || `${BASE_URL}${route.path}`}</loc>
+    <lastmod>${route.lastmod || today}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority}</priority>
   </url>`;
