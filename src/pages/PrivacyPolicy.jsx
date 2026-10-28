@@ -1,5 +1,6 @@
 // src/pages/PrivacyPolicy.jsx
 import React, { useMemo, useState, useEffect } from "react";
+import SEO from "../components/SEO";
 
 /**
  * MBCT Privacy Policy page
@@ -103,6 +104,11 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="bg-white text-gray-800">
+      <SEO
+        title="Privacy Policy"
+        description="Read how Marine Biodiversity Conservation Trust (MBCT) collects, uses, and protects your personal data."
+        canonical="https://www.marinebiodiversityconservation.com/privacy-policy"
+      />
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-sky-900 via-teal-500 to-sky-500 opacity-95" />

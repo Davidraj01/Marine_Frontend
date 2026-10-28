@@ -3,6 +3,7 @@ import Confetti from "react-confetti";
 import { allQuizQuestions } from "../data/quizData";
 import ProgressBar from "../components/quiz/ProgressBar";
 import ResultScreen from "../components/quiz/ResultScreen";
+import SEO from "../components/SEO";
 
 /* 🔹 Hook to get full window size */
 function useWindowSize() {
@@ -108,6 +109,11 @@ export default function MarineQuiz() {
 
   return (
     <div className="min-h-screen bg-[#011f33] text-white px-6 relative flex flex-col justify-center">
+      <SEO
+        title="Marine Life Quiz"
+        description="Test your knowledge of marine biodiversity and ocean conservation with MBCT's interactive marine life quiz."
+        canonical="https://www.marinebiodiversityconservation.com/marine-quiz"
+      />
       {/* Confetti Overlay */}
       {showConfetti && (
         <div className="fixed inset-0 z-[9999] pointer-events-none">

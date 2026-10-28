@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import oceanCountries from "../data/oceanCountries";
+import SEO from "../components/SEO";
 
 export default function CountriesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-900 via-sky-700 to-sky-500 text-white px-4 py-8">
+      <SEO
+        title="Countries We Work In"
+        description="Explore marine biodiversity facts and ocean conservation efforts across the countries where MBCT is active."
+        canonical="https://www.marinebiodiversityconservation.com/countries"
+      />
       {/* Main Layout Container */}
       <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 relative">
         {/* ================= LEFT COLUMN: FACTS (Independently Scrollable) ================= */}

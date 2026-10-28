@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
+import SEO from "./SEO";
 
-export default function VolunteerList() {
+// `seo` is only passed when this component is the whole page (the /heros
+// route in App.jsx) — CTA.jsx embeds <VolunteerList /> inside other pages,
+// so it must stay false there to avoid two conflicting Helmet blocks.
+export default function VolunteerList({ seo = false }) {
   const [volunteers, setVolunteers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(8);
@@ -35,6 +39,13 @@ export default function VolunteerList() {
 
   return (
     <div className="w-full py-20 px-6 bg-[#000d11] relative">
+      {seo && (
+        <SEO
+          title="Our Heroes & Volunteers"
+          description="Meet the volunteers and ocean ambassadors driving marine conservation action with Marine Biodiversity Conservation Trust (MBCT)."
+          canonical="https://www.marinebiodiversityconservation.com/heros"
+        />
+      )}
       <div className="max-w-7xl mx-auto relative z-10">
         <header className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>

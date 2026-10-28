@@ -1,6 +1,7 @@
 import React from "react";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { motion } from "framer-motion";
+import SEO from "./SEO";
 
 const ITEMS = [
   {
@@ -47,7 +48,10 @@ const rightCardVariants = {
   },
 };
 
-export default function Threats() {
+// `seo` is only passed when this component is the whole page (the /threats
+// route in App.jsx) — Home.jsx embeds <Threats /> inside its own <SEO>-ed
+// page, so it must stay false there to avoid two conflicting Helmet blocks.
+export default function Threats({ seo = false }) {
   return (
     <motion.section
       className="bg-[#e0f7fa] py-16"
@@ -55,6 +59,13 @@ export default function Threats() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }} // trigger when ~20% in view
     >
+      {seo && (
+        <SEO
+          title="Threats to Marine Life"
+          description="Learn about the major threats facing ocean ecosystems — plastic pollution, overfishing, climate change, and habitat destruction."
+          canonical="https://www.marinebiodiversityconservation.com/threats"
+        />
+      )}
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-10">

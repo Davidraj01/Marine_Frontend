@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useLazyLoad } from '../hooks/useLazyLoad';
+import SEO from "../components/SEO";
 
 const Hero =
   "https://images.pexels.com/photos/31307991/pexels-photo-31307991.jpeg";
@@ -91,6 +92,11 @@ export default function Services() {
 
   return (
     <div className="relative overflow-hidden bg-white">
+      <SEO
+        title="Marine Life Encyclopedia"
+        description="Discover marine mammals, fish, reptiles, and other ocean species, and learn about threats to marine biodiversity."
+        canonical="https://www.marinebiodiversityconservation.com/marine-life"
+      />
       {/* ---------- HERO ---------- */}
       <section
         ref={addElement}

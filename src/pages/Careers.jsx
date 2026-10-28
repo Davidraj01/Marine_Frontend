@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import JoinVolunteerFormInline from "../components/JoinVolunteerFormInline";
 import ApplicationForm from "../components/ApplicationForm";
+import SEO from "../components/SEO";
 
 // Simple static openings (backup data)
 const JOBS = [
@@ -43,6 +44,11 @@ export default function Careers() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#00121a] via-[#002b3a] to-[#00121a] text-sky-100 px-6 py-12">
+      <SEO
+        title="Careers & Volunteering"
+        description="Explore job openings, internships, and volunteering opportunities at Marine Biodiversity Conservation Trust (MBCT)."
+        canonical="https://www.marinebiodiversityconservation.com/careers"
+      />
       <div className="max-w-6xl mx-auto space-y-12">
         {/* HERO */}
         <section className="grid lg:grid-cols-2 gap-8 items-center">

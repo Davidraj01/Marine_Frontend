@@ -2,10 +2,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaTools, FaWrench, FaHeart, FaHandsHelping } from "react-icons/fa";
+import SEO from "../components/SEO";
 
 export default function Fellowship() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#00121a] via-[#002b3a] to-[#00121a] text-sky-100 relative">
+      <SEO
+        title="Fellowship Program"
+        description="Join MBCT's fellowship program to contribute hands-on skills and support marine conservation projects."
+        canonical="https://www.marinebiodiversityconservation.com/fellowship"
+      />
       {/* Right side floating buttons */}
       <div className="fixed right-4 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-40">
         <Link

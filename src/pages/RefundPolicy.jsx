@@ -1,4 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
+import SEO from "../components/SEO";
 
 const sections = [
   { id: "intro", label: "1) Introduction" },
@@ -78,6 +79,11 @@ const RefundPolicy = () => {
 
   return (
     <div className="bg-white text-gray-800">
+      <SEO
+        title="Cancellation & Refund Policy"
+        description="Read MBCT's cancellation and refund policy for donations, memberships, and payments made to Marine Biodiversity Conservation Trust."
+        canonical="https://www.marinebiodiversityconservation.com/cancellation-refund-policy"
+      />
       {/* Hero Section */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-sky-900 via-teal-500 to-sky-500 opacity-95" />

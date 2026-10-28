@@ -18,9 +18,24 @@ const SEO = ({
     ? `${title} — ${siteName}` 
     : 'Marine Conservation Trust — Protect Ocean Life & Reefs';
   const fullUrl = canonical || siteUrl;
-  const metaImage = image 
-    ? (image.startsWith('http') ? image : `${siteUrl}${image}`) 
+  const metaImage = image
+    ? (image.startsWith('http') ? image : `${siteUrl}${image}`)
     : `${siteUrl}${defaultImage}`;
+
+  // Every page gets JSON-LD: either the caller's own `schema` (e.g. Home's
+  // Blog/BlogPosting graph) or, by default, a basic WebPage node tied to the
+  // site's WebSite entity (see index.html's WebSite #website @id) so every
+  // route is schema-marked without having to hand-write one per page.
+  const pageSchema = schema || {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${fullUrl}#webpage`,
+    url: fullUrl,
+    name: fullTitle,
+    description,
+    inLanguage: 'en-US',
+    isPartOf: { '@id': `${siteUrl}/#website` },
+  };
 
   return (
     <Helmet>
@@ -56,11 +71,9 @@ const SEO = ({
       <meta name="twitter:image" content={metaImage} />
 
       {/* Schema.org JSON-LD */}
-      {schema && (
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
-      )}
+      <script type="application/ld+json">
+        {JSON.stringify(pageSchema)}
+      </script>
     </Helmet>
   );
 };

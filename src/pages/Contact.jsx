@@ -9,6 +9,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import SEO from "../components/SEO";
 
 /**
  * Contact page with Lottie toast on success (uses <lottie-player> web component)
@@ -83,6 +84,11 @@ export default function Contact() {
 
   return (
     <main className="relative min-h-screen bg-gradient-to-b from-[#001726] via-[#002a45] to-[#000814] overflow-hidden text-sky-100">
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Marine Biodiversity Conservation Trust (MBCT) for partnerships, volunteering, donations, or general inquiries."
+        canonical="https://www.marinebiodiversityconservation.com/contact"
+      />
       {/* ... (all your decorative SVG / page content) ... */}
       {/* For brevity I'm including the same page content you provided above unchanged,
           except the toast UI at the end. Keep everything else as-is. */}

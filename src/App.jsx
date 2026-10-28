@@ -132,7 +132,7 @@ export default function App() {
               <Route path="/projects" element={<Project />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/donate" element={<Donation />} />
-              <Route path="/threats" element={<Threats />} />
+              <Route path="/threats" element={<Threats seo />} />
 
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route
@@ -165,7 +165,7 @@ export default function App() {
               <Route path="/marine-quiz" element={<MarineQuiz />} />
               <Route path="/ocean-drive" element={<OceanDive />} />
               <Route path="/marine-news" element={<MarineNews />} />
-              <Route path="/heros" element={<VolunteerList />} />
+              <Route path="/heros" element={<VolunteerList seo />} />
               <Route path="/deleteaccount" element={<AccountDeletion />} />
               <Route path="/gallery/:albumId" element={<GalleryPage />} />
 

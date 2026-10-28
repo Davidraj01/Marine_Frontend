@@ -1,4 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
+import SEO from "../components/SEO";
 
 const sections = [
   { id: "intro", label: "1) Introduction" },
@@ -85,6 +86,11 @@ const TermsAndConditions = () => {
 
   return (
     <div className="bg-white text-gray-800">
+      <SEO
+        title="Terms & Conditions"
+        description="Read the terms and conditions governing use of the Marine Biodiversity Conservation Trust (MBCT) website and services."
+        canonical="https://www.marinebiodiversityconservation.com/terms-and-conditions"
+      />
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-sky-900 via-teal-500 to-sky-500 opacity-95" />

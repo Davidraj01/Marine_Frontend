@@ -6,6 +6,7 @@ Drop into your project and use like your previous component.
 import React, { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import MarineNews from './MarineNews';
+import SEO from "../components/SEO";
 import { BASE_URL } from "../utils/contants";
 
 const ASSET_ORIGIN = BASE_URL.replace(/\/api$/, "");
@@ -117,6 +118,11 @@ export default function EBoard() {
 
   return (
     <>
+      <SEO
+        title="Admin's Lounge"
+        description="Browse MBCT's shared project documents, reports, and resources from Admin's Lounge."
+        canonical="https://www.marinebiodiversityconservation.com/projects"
+      />
       <div className="min-h-screen bg-gradient-to-b from-[#00121a] via-[#002b3a] to-[#00121a] py-12 px-4 sm:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">

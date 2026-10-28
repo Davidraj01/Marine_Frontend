@@ -3,6 +3,7 @@ import BubbleLayer from "../components/ocean/BubbleLayer";
 import DepthMeter from "../components/ocean/DepthMeter";
 import TitanicWreck from "../components/ocean/TitanicWreck";
 import ZoneLabel from "../components/ocean/ZoneLabel";
+import SEO from "../components/SEO";
 
 // 🌞 Surface (0–200m)
 import dolphin from "../assets/ocean/dolphin.png";
@@ -441,6 +442,11 @@ export default function OceanDrive() {
       `,
       }}
     >
+      <SEO
+        title="Ocean Drive"
+        description="Take an immersive scroll-driven journey through ocean depths and discover the marine life at every level with MBCT's Ocean Drive."
+        canonical="https://www.marinebiodiversityconservation.com/ocean-drive"
+      />
       {/* 🌊 HERO TEXT (OVERLAY) */}
       <section
         className="h-screen flex flex-col items-center justify-center text-center

@@ -1,6 +1,7 @@
 // src/components/Opine.jsx
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import SEO from "../components/SEO";
 
 const API_BASE = "https://back.marinebiodiversityconservation.com";
 
@@ -92,6 +93,11 @@ export default function Opine() {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
+      <SEO
+        title="Opine — Share Your Thoughts"
+        description="Share your opinions and articles about marine biodiversity and ocean conservation with the MBCT community."
+        canonical="https://www.marinebiodiversityconservation.com/opine"
+      />
       <h1 className="text-4xl font-extrabold text-center text-teal-700">
         Opine Share Your Thoughts
       </h1>

@@ -1,5 +1,6 @@
 // src/pages/DonationPolicy.jsx
 import React, { useMemo, useState, useEffect } from "react";
+import SEO from "../components/SEO";
 
 /**
  * Donation Policy — Marine Biodiversity Conservation Trust (MBCT)
@@ -90,6 +91,11 @@ export default function DonationPolicy() {
 
   return (
     <div className="bg-white text-gray-800">
+      <SEO
+        title="Donation Policy"
+        description="Learn how Marine Biodiversity Conservation Trust (MBCT) uses donations, issues receipts, and ensures transparency and accountability."
+        canonical="https://www.marinebiodiversityconservation.com/donation-policy"
+      />
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-sky-900 via-teal-500 to-sky-500 opacity-95" />
